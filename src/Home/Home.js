@@ -22,7 +22,7 @@ const Home = () => {
                     <Product
                         key="2"
                         id="12312233314"
-                        title="Kenwood kMix Stand Mixer"
+                        title="Kenwood kMix Stand Mixer Kenwood kMix Stand Mixer Kenwood kMix Stand Mixer Kenwood kMix Stand Mixer Kenwood kMix Stand Mixer Kenwood kMix Stand Mixer"
                         image="https://images-na.ssl-images-amazon.com/images/I/51Zymoq7UnL._AC_SY400_.jpg"
                         price={239.99}
                         rating={3}
