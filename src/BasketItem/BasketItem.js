@@ -1,11 +1,9 @@
 import React from 'react'
 import './BasketItem.css';
-// import {useStateValue} from '../StateProvider';
 import StarIcon from '@material-ui/icons/Star';
 import CurrencyFormat from 'react-currency-format';
 
 const BasketItem = ({id, title, price, rating, image}) => {
-    // const [{basket}, dispatch] = useStateValue();
 
     return (
         <div className="basketItem">
