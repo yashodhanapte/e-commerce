@@ -4,20 +4,28 @@ import Header from './Header/Header';
 import Home from './Home/Home';
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import Checkout from './Checkout/Checkout';
+import ProductDetails from './ProductDetails/ProductDetails';
 
 function App() {
   return (
     <Router>
       <div className="app">
+
         <Header />
+
         <Switch>
           <Route path="/checkout">
             <Checkout />
           </Route>
+          <Route path="/details">
+            <ProductDetails />
+          </Route>
           <Route path="/">
             <Home />
           </Route>
+
         </Switch>
+
       </div>
     </Router>
   );

@@ -1,8 +1,12 @@
 
-import {ADD_TO_BASKET} from './actions';
+import {
+    ADD_TO_BASKET,
+    SELECTED_PRODUCT
+} from './actions';
 
 export const initialState = {
-    basket: []
+    basket: [],
+    selectedProduct: null
 }
 
 //Selector
@@ -17,6 +21,11 @@ const reducer = (state, action) => {
             return {
                 ...state,
                 basket: [...state.basket, action.item],
+            }
+        case SELECTED_PRODUCT:
+            return {
+                ...state,
+                selectedProduct: action.item,
             }
         default:
             return state;
